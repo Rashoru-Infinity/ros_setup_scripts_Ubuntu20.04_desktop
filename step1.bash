@@ -11,7 +11,7 @@ sudo apt install -y curl
 curl -k https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
 sudo apt update || echo ""
 
-sudo apt install -y ros-${ROS_VER}-desktop-full
+sudo apt install -y ros-${ROS_VER}-desktop
 
 ls /etc/ros/rosdep/sources.list.d/20-default.list && sudo rm /etc/ros/rosdep/sources.list.d/20-default.list
 sudo apt install python3-pip
